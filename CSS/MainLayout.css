@@ -1,0 +1,419 @@
+:root{
+    --half-gap: calc(var(--grid-gap)/2);
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    /*border: #000000 1px dotted;*/
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold !important;
+}
+
+header{
+    height: 12%;
+    display: grid;
+    grid-template-areas:
+        'logo switch_campus login';
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: var(--grid-gap);
+    padding: var(--half-gap);
+}
+
+main{
+    display: flex;
+    height: 88%;
+
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    /*resize: both;*/
+    /*overflow: hidden;*/
+    padding: var(--half-gap);
+    text-align: center;
+    font-size: 1.2em;
+   /* font-weight: 550;*/
+}
+#switch_campus_title{
+    margin-left:5%;
+}
+#switch_campus_options {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+#general_homepage{
+    background-image: url(../dummyPictures/home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5%;
+    height: 55%;
+    cursor: pointer;
+
+}
+#go_to_home_title{
+    cursor: pointer;
+    font-size: x-large;
+
+}
+#general_homepage_section{
+    width: 100%;
+    height: 100%;
+
+}
+
+#goto_myhome{
+    background-image: url(../dummyPictures/mypage.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    flex:0.5;
+    min-height: 70px;
+    min-width:70px;
+
+}
+#goto_myhome_title{
+    display: flex;
+    justify-content: start;
+    flex:1;
+}
+#goto_myhome_section{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    background-color: #C49D12;
+}
+#goto_myhome_section:hover{
+    background: rgba(241,241,241, 0.1);
+}
+.campuses{
+    flex:1;
+    font-weight: normal;
+    transition: transform 1s ; /* Animation */
+}
+hr.vertical{
+
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         70%;
+    width:          1px;
+    margin-left: 10%;
+}
+
+.left{
+    flex: 1;
+    display: grid;
+    grid-template-areas:
+            'news announcements'
+            'news announcements'
+            'photo_album photo_album'
+            'p-c-interaction p-c-interaction';
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+    grid-gap: var(--grid-gap);
+    padding: var(--half-gap);
+}
+
+.middle{
+    flex: 0;
+    display: flex;
+    padding: var(--half-gap) 0 var(--half-gap) 0;
+    overflow:hidden;
+}
+
+.right{
+    flex: 2;
+
+    display:grid;
+    grid-template-areas:
+            'carousel carousel carousel carousel'
+            'events schedule restaurant course'
+            'events counseling contact contact';
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-gap: var(--grid-gap);
+    padding: var(--half-gap);
+}
+
+.left.content_view{
+    grid-template-areas:
+        'news'
+        'announcements'
+        'photo_album'
+        'p-c-interaction';
+    /*grid-template-rows: 1fr 1fr 2fr 2fr;*/
+}
+
+.middle.content_view{
+    padding: var(--half-gap);
+    flex: 5;
+}
+
+.right.content_view {
+    flex: 1;
+    grid-template-areas:
+        'schedule'
+        'restaurant'
+        'course'
+        'events'
+        'counseling'
+        'contact';
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.right.content_view > #carousel{
+    display: none;
+}
+@media (max-width: 800px){
+    .right{
+        flex:1;
+        grid-template-areas:
+            'carousel'
+            'schedule'
+            'restaurant'
+            'course'
+            'events'
+            'contact';
+        grid-template-rows: 3fr 1fr 1fr 1fr 2fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+#logo{
+    grid-area: logo;
+    cursor: pointer;
+
+
+}
+
+#switch_campus{
+    grid-area: switch_campus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#login{
+    grid-area: login;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in;
+}
+#login:hover{
+  background: rgba(241, 241, 241, 0.1);
+}
+#news{
+    grid-area: news;
+}
+#announcements{
+    grid-area: announcements;
+}
+#photo_album{
+    grid-area: photo_album;
+}
+#p-c-interaction{
+    grid-area: p-c-interaction;
+}
+#counseling{
+    grid-area: counseling;
+}
+#carousel{
+    grid-area: carousel;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#schedule{
+    grid-area: schedule;
+}
+#restaurant{
+    grid-area: restaurant;
+}
+#course{
+    grid-area: course;
+}
+#events{
+    grid-area: events;
+}
+#contact{
+    grid-area: contact;
+}
+.content{
+    flex: 1;
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+.content_view>.content{
+    display: flex;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+
+#logo{
+   /* background-image: url("../dummyPictures/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+#carousel{
+
+    background-image: url("../dummyPictures/carousel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#photo_album{
+    background-image: url("../dummyPictures/album.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*simple animations*/
+
+/*Logo*/
+.ml6 {height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.75em;
+    color:#FFC805;
+//font-size: 1.45vw;
+    min-width:160px !important;
+}
+
+.ml6 .text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Brush Script MT;
+
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/*
+Home icon*/
+
+.butn:hover {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s infinite linear;
+    -o-animation: bounce 0.5s infinite linear;
+    -webkit-animation: bounce 0.5s infinite linear;
+    animation: bounce 0.5s infinite linear;
+
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+#goto_myhome_sub{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: 5%;
+}
+#goto_myhome_sub:hover{
+
+    cursor: pointer;
+
+}
+#goto_home_sub{
+    height:80%;
+    width:100%;
+    padding:1%;
+    margin-top:1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+#goto_home_sub:hover{
+transform: scale(1.15);
+}
+.campuses:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.left>*:hover, .right>*:not(#cute_baby):hover {
+    transition: .5s ease;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.dailyData, .physicalDev {
+    color:white;
+}

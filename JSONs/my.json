@@ -1,0 +1,226 @@
+{
+  "profile": {
+    "userID1": {
+      "avatar": "",
+      "phone": "",
+      "address": {
+        "street": "",
+        "number": 0,
+        "zip": 0,
+        "city": 0
+      },
+      "childAge": 0,
+      "teacher": "",
+      "notifications": [
+        {
+          "type": "",
+          "date": "",
+          "description": ""
+        }, {
+          "type": "",
+          "date": "",
+          "description": ""
+        }, {
+          "type": "",
+          "date": "",
+          "description": ""
+        }
+      ]
+    },
+    "userID2": {
+      "avatar": "",
+      "phone": "",
+      "address": {
+        "street": "",
+        "number": 0,
+        "zip": 0,
+        "city": 0
+      },
+      "childAge": 0,
+      "teacher": "",
+      "notifications": [
+        {
+          "type": "",
+          "date": "",
+          "description": ""
+        }, {
+          "type": "",
+          "date": "",
+          "description": ""
+        }, {
+          "type": "",
+          "date": "",
+          "description": ""
+        }
+      ]
+    }
+  },
+  "payments": {
+    "userID1": [
+      {
+        "date": "",
+        "description": "",
+        "amount": 0,
+        "contract": "",
+        "paid": false
+      }, {
+        "date": "",
+        "description": "",
+        "amount": 0,
+        "contract": "",
+        "paid": false
+      }
+    ],
+    "userID2": [
+      {
+        "date": "",
+        "description": "",
+        "amount": 0,
+        "contract": "",
+        "paid": false
+      }, {
+        "date": "",
+        "description": "",
+        "amount": 0,
+        "contract": "",
+        "paid": false
+      }, {
+        "date": "",
+        "description": "",
+        "amount": 0,
+        "contract": "",
+        "paid": false
+      }
+    ]
+  },
+  "courses": {
+    "userID1": [
+      {
+        "courseName": "",
+        "remainingHours": 0,
+        "startDate": ""
+      }, {
+        "courseName": "",
+        "remainingHours": 0,
+        "startDate": ""
+      }, {
+        "courseName": "",
+        "remainingHours": 0,
+        "startDate": ""
+      }
+    ],
+    "userID2": [
+      {
+        "courseName": "",
+        "remainingHours": 0,
+        "startDate": ""
+      }, {
+        "courseName": "",
+        "remainingHours": 0,
+        "startDate": ""
+      }
+    ]
+  },
+  "attendance": {
+    "userID1": [
+      {
+        "leaveDate": "",
+        "leaveTime": "",
+        "leaveReason": "",
+        "confirmed": true,
+        "registeredBy": "parent"
+      }, {
+        "leaveDate": "",
+        "leaveTime": "",
+        "leaveReason": "",
+        "confirmed": true,
+        "registeredBy": "teacher"
+      }
+    ],
+    "userID2": [
+      {
+        "leaveDate": "",
+        "leaveTime": "",
+        "leaveReason": "",
+        "confirmed": false,
+        "registeredBy": "parent"
+      }, {
+        "leaveDate": "",
+        "leaveTime": "",
+        "leaveReason": "",
+        "confirmed": true,
+        "registeredBy": "teacher"
+      }
+    ]
+  },
+  "cuteBabyHighlight": {
+    "userID1": {
+      "highlightImg": "",
+      "events": [
+        {
+          "img": "",
+          "desc": ""
+        }, {
+          "img": "",
+          "desc": ""
+        }, {
+          "img": "",
+          "desc": ""
+        }, {
+          "img": "",
+          "desc": ""
+        }
+      ]
+    },
+    "userID2": {
+      "highlightImg": "",
+      "events": [
+        {
+          "img": "",
+          "desc": ""
+        }, {
+          "img": "",
+          "desc": ""
+        }, {
+          "img": "",
+          "desc": ""
+        }, {
+          "img": "",
+          "desc": ""
+        }
+      ]
+    }
+  },
+  "cuteBabyAbility": {
+    "userID1": {
+      "abilities": ["", ""],
+      "comment": ""
+    },
+    "userID2": {
+      "abilities": ["", ""],
+      "comment": ""
+    }
+  },
+  "cuteBabyDevelopment": {
+    "userID1": {
+      "height": 0,
+      "weight": 0,
+      "headCircumference": 0
+    },
+    "userID2": {
+      "height": 0,
+      "weight": 0,
+      "headCircumference": 0
+    }
+  },
+  "feedback": {
+    "userID1": {
+      "responses": [1,1,1],
+      "comment": ""
+    },
+    "userID2": {
+      "responses": [1,1,1],
+      "comment": ""
+    }
+  }
+}

@@ -1,0 +1,70 @@
+/*##########   variables   ##########*/
+/*:root{
+}*/
+
+
+.left,
+.middle,
+.right{
+    transition: flex-grow .5s;
+    transition-timing-function: ease-out;
+}
+#left,#middle,#right{
+    transition: flex-grow .3s;
+    transition-timing-function: ease-out;
+}
+
+.inner {
+    transition: transform .6s;
+    transition-delay: 0s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+/*##########   flip card   ##########*/
+
+.flip-card {
+    /*background: transparent;*/
+    perspective: 1000px;
+    transition: transform .6s;
+    transition-delay: 0s;
+}
+.left-top{
+    transform-origin: left top;
+}
+.right-top{
+    transform-origin: right top;
+}
+.left-bottom{
+    transform-origin: left bottom;
+}
+.right-bottom{
+    transform-origin: right bottom;
+}
+
+
+/*##########   flip text   ##########*/
+
+.flip-text{
+    transition: transform .6s, background .6s, color .6s;
+    transition-delay: 0s;
+}
+
+.flip-text:hover:not(.active) .inner{
+    transform: rotateX(180deg);
+    transition-delay: .3s;
+}
+
+.flip-text .back {
+    transform: rotateX(180deg);
+}
+.flip-text .front{
+    transform: rotateX(0deg);
+}
+
+.zoom:hover:not(.active){
+    transform:scaleX(1.2) scaleY(1.4);
+    transition-delay: .3s;
+    z-index:10;
+}
+

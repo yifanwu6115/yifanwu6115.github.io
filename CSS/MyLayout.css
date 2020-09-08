@@ -1,0 +1,208 @@
+/*:root{
+    --grid-gap: 10px;
+    --half-gap: calc(var(--grid-gap)/2);
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    !*border: #ffffff 1px dotted;*!
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    !*resize: both;*!
+    !*overflow: hidden;*!
+    padding: var(--half-gap);
+    text-align: center;
+}
+
+header{
+    height: 12%;
+    display: flex;
+
+    !*display: grid;
+    grid-template-areas:
+            'logo goto_main logout';
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: var(--grid-gap);
+    padding: var(--half-gap);*!
+}
+header>*{
+    margin: var(--half-gap);
+}
+
+
+#logo, #logout{
+    flex: 1;
+}
+#goto_main{
+    flex: 5;
+}*/
+
+myhome{
+    display: flex;
+    height: 88%;
+
+}
+.my_home_section{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left>*:hover, #right>*:hover {
+    transition: .5s ease;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.content_view_close{
+    background-image: url(../dummyPictures/close.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    padding: 20px;
+    position: absolute;
+    right: 16%;
+    top: 13%;
+    z-index: 999;
+    display: none;
+}
+.show{
+    display: block;
+}
+#left{
+display: grid;
+grid-template-areas:
+        'profile'
+        'payments'
+        'feedback';
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: var(--grid-gap);
+flex: 1;
+padding: var(--half-gap);
+}
+
+#middle{
+flex: 0;
+display: flex;
+padding: var(--half-gap) 0 var(--half-gap) 0;
+overflow:hidden;
+justify-content: center;
+}
+
+#right{
+display:grid;
+grid-template-areas:
+        'cute_baby notifications'
+        'courses notifications'
+        'attendance contact';
+grid-template-rows: 4.3fr 1fr 1fr;
+grid-gap: var(--grid-gap);
+flex: 2;
+padding: var(--half-gap);
+}
+
+#left.content_view{
+flex: 1;
+}
+
+#middle.content_view{
+padding: var(--half-gap);
+flex: 5;
+}
+
+#right.content_view {
+flex: 1;
+grid-template-areas:
+        'cute_baby'
+        'courses'
+        'attendance'
+        'notifications'
+        'contact';
+grid-template-rows: 3fr 2fr 2fr 1fr 1fr;
+}
+@media (max-width: 800px){
+#right{
+    flex:1;
+    grid-template-areas:
+            'cute_baby'
+            'courses'
+            'attendance'
+            'notifications'
+            'contact';
+    grid-template-rows: 3fr 2fr 2fr 1fr 1fr;
+}
+}
+#logo{
+grid-area: logo;
+}
+#goto_main{
+grid-area: goto_main;
+}
+#logout{
+grid-area: logout;
+}
+#profile{
+grid-area: profile;
+background-color: #FFC700;
+}
+#payments{
+grid-area: payments;
+background-color: #222A32;
+color: white;
+}
+#feedback{
+grid-area: feedback;
+background-color: #2F2B2B;
+color:white;
+}
+#cute_baby{
+grid-area: cute_baby;
+color:white;
+background-image: url("../dummyPictures/cute baby.png");
+background-size: cover;
+    background-position: center;
+}
+
+#courses{
+grid-area: courses;
+background-color: #FFC700;
+}
+#attendance{
+grid-area: attendance;
+background-color: #352525;
+color: white;
+}
+#notifications{
+    grid-area: notifications;
+    background-color: #E5E5E5;
+    display: block;
+
+}
+#mycontact{
+grid-area: contact;
+background-color: #222A32;
+color: white;
+}
+#content{
+filter: drop-shadow(0px 0px 4px rgba(172, 188, 200, 0.6));
+flex: 0.97;
+margin: 1px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #353531;
+    z-index: 2;
+}

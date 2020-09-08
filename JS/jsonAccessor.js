@@ -1,0 +1,1 @@
+//this file is being used to read the JSON files as well as create and manipulate the data variables

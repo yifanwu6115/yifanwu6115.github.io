@@ -1,0 +1,120 @@
+:root{
+    --darkest:   #353531;
+    --dark:		 #353531;
+    --darkBlue:  #0C2145;
+    --midGray:   #595959;
+    --midRed:  	 #C0453F;
+    --midGreen:  #69AC38;
+    --accent:    #FFC805;
+    --brightest: #FAF6EF;
+
+    --gaps: var(--darkest);
+
+    --dark-text: var(--darkest);
+    --bright-text: var(--brightest);
+
+    --campus-bg: var(--brightest);
+    --campus-txt: var(--dark-text);
+    --login-bg: #E5E5E5;
+    --login-txt: var(--dark-text);
+
+    --content: var(--dark);
+
+    --tile-bg1: var(--midGray);
+    --tile-txt1: var(--bright-text);
+    --tile-bg2: var(--accent);
+    --tile-txt2: var(--dark-text);
+    --tile-bg3: #E5E5E5;
+    --tile-txt3: var(--dark-text);
+
+    --tile-hover-bg: #E5E5E5;
+    --tile-hover-txt: var(--dark-text);
+
+    --tile-active-bg: var(--brightest);
+    --tile-active-txt: black;
+    --grid-gap: 0;
+}
+
+#switch_campus{
+    background: var(--darkest);
+    color: white;
+}
+#login{
+    background: var(--midGray);
+    color: white;
+    cursor: pointer;
+}
+
+/*#logo, #switch_campus, #goto_main, #login, #logout{
+    background: var(--midGray);
+    color: var(--brightest);
+}*/
+
+/*.left>*:not(.active), .right>*:not(.active){
+    background: var(--dark);
+    color: var(--brightest);
+}*/
+.content{
+    background: var(--content);
+}
+
+#wrapper{
+    background: var(--gaps);
+}
+
+#news{
+    background: var(--tile-bg1);
+    color: var(--tile-txt1);
+
+}
+#announcements{
+    background: var(--tile-bg2);
+    color: var(--tile-txt2);
+}
+#counseling{
+    background: var(--tile-bg1);
+    color: var(--tile-txt1);
+}
+#p-c-interaction{
+    background: var(--tile-bg2);
+    color: var(--tile-txt2);
+}
+#events{
+    background: var(--tile-bg3);
+    color: var(--tile-txt3);
+}
+#schedule{
+    background: var(--tile-bg2);
+    color: var(--tile-txt2);
+    z-index: 2;
+}
+#restaurant{
+    background: var(--tile-bg1);
+    color: var(--tile-txt1);
+}
+#course{
+    background: var(--tile-bg2);
+    color: var(--tile-txt2);
+}
+#contact{
+    background: var(--tile-bg3);
+    color: var(--tile-txt3);
+}
+
+.flip-text:hover:not(.active){
+    background: var(--tile-hover-bg);
+    color: var(--tile-hover-txt);
+}
+.shadow{
+    box-shadow: -2px 2px 5px 5px rgba(0,0,0,0.2);
+}
+.hover_shadow:hover:not(.active){
+    box-shadow: -2px 2px 5px 5px rgba(0,0,0,0.2);
+}
+.active_shadow.active{
+    box-shadow: -2px 2px 5px 5px rgba(0,0,0,0.2);
+}
+.active{
+    background: var(--tile-active-bg);
+    color: var(--tile-active-txt);
+}

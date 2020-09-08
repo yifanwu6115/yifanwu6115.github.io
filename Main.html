@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/MainLayout.css">
+    <link id = "color" rel="stylesheet" type="text/css" href="CSS/Color1.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Content.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Interaction.css">
+    <link rel="stylesheet" type="text/css" href="CSS/MyLayout.css">
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="JS/View.js"></script>
+
+    <title>Smiles Kindergarten</title>
+  </head>
+  <body>
+  <div id = wrapper>
+    <header>
+      <div id = logo>
+        <h1 class="ml6">
+          <span class="text-wrapper">
+            <span class="letters">Smile School</span>
+          </span>
+        </h1>
+      </div>
+      <div id = switch_campus>
+
+        <div id = switch_campus_options>
+
+
+          <span id="switch_campus_title">校区切换</span>
+          <div class="campuses">校区A</div>
+          <div class="campuses">校区B</div>
+          <div class="campuses">校区C</div>
+          <div class="campuses">校区D</div>
+          <div class="campuses">校区E</div>
+          <div id="goto_myhome_section" >
+            <!--<hr class="vertical">-->
+            <div id="goto_myhome_sub">
+              <div id="goto_myhome" ></div>
+              <span id="goto_myhome_title">我的个人网页</span>
+            </div>
+
+          </div>
+        </div>
+        <div id="general_homepage_section">
+          <div id="goto_home_sub">
+          <div id="general_homepage" ></div>
+          <span id="go_to_home_title">回到首页</span>
+            </div>
+        </div>
+      </div>
+
+
+      <div id = login>登录</div>
+    </header>
+    <main>
+    <section class = "left">
+      <div id = news class = "flip-text" >
+        <div class="inner">
+          <div class="front">
+            通知公告
+          </div>
+          <div class="back">
+            NEWS
+          </div>
+        </div>
+      </div>
+      <div id = announcements class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            最新资讯
+          </div>
+          <div class="back">
+            ANNOUNCEMENTS
+          </div>
+        </div>
+      </div>
+      <div id = photo_album class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            班级相册
+          </div>
+          <div class="back">
+            PHOTO ALBUM
+          </div>
+        </div>
+      </div>
+      <div id = p-c-interaction class = "flip-text">
+        <div class="inner">
+          <div class="front">
+             亲子互动
+          </div>
+          <div class="back">
+            PARENT-CHILD
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class = "middle">
+      <div class = "content">
+        <div id = news_content>
+          通知公告图文<br>
+          News Content
+        </div>
+
+        <div id = announcements_content>
+          最新资讯图文<br>
+          Announcements Content
+        </div>
+
+        <div id = photo_album_content>
+          班级相册图文<br>
+          Photo Album Content
+        </div>
+
+        <div id = p-c-interaction_content>
+          亲子互动图文<br>
+          Parent-Child Content
+        </div>
+
+        <div id = schedule_content>
+          课程表图文<br>
+          Schedule Content
+        </div>
+
+        <div id = restaurant_content>
+          食谱预告图文<br>
+          Restaurant Content
+        </div>
+
+        <div id = course_content>
+          课程展示图文<br>
+          Courses Content
+        </div>
+
+        <div id = events_content>
+          活动报名图文<br>
+          Events Content
+        </div>
+
+        <div id = counseling_content>
+          心理咨询图文<br>
+          Counseling Content
+        </div>
+
+        <div id = contact_content>
+          联系我们图文<br>
+          Contact Content
+        </div>
+
+      </div> <!--end of content section-->
+      <div class="content_view_close" style = "filter: invert(100%);"></div>
+    </section>
+    <section class = "right">
+      <div id = carousel class = "no_content"></div>
+      <div id = schedule class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            课程表
+          </div>
+          <div class="back">
+            SCHEDULE
+          </div>
+        </div>
+      </div>
+      <div id = restaurant class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            食谱预告
+          </div>
+          <div class="back">
+            RESTAURANT
+          </div>
+        </div>
+      </div>
+      <div id = course class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            课程展示
+          </div>
+          <div class="back">
+            COURSES
+          </div>
+        </div>
+      </div>
+      <div id = events class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            活动报名
+          </div>
+          <div class="back">
+            EVENTS
+          </div>
+        </div>
+      </div>
+      <div id = counseling class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            心理咨询
+          </div>
+          <div class="back">
+            COUNSELLING
+          </div>
+        </div>
+      </div>
+      <div id = contact class = "flip-text">
+        <div class="inner">
+          <div class="front">
+            联系我们
+          </div>
+          <div class="back">
+            CONTACT
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <myhome> <!--We should rename the classes/ ids &#45;&#45; too many repeated -->
+      <section id = "left">
+        <div id = "profile" class = "flip-text my_home_section">
+          <div class="inner">
+            <div class = " front">
+              我的资料
+            </div>
+            <div class="back">
+              MY PROFILE
+            </div>
+          </div>
+        </div>
+
+        <div id = "payments" class = "flip-text my_home_section">
+          <div class="inner">
+            <div class = " front">
+              我的缴费与合同
+            </div>
+            <div class="back">
+              MY PAYMENTS & CONTRACTS
+            </div>
+          </div>
+        </div>
+
+        <div id = "feedback" class = "flip-text my_home_section">
+          <div class="inner">
+            <div class = " front">
+              我的调查表
+            </div>
+            <div class="back">
+              MY FEEDBACK
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id = "middle">
+
+        <div id = "content">
+
+          <!--Content for my profile-->
+          <div id="profile_content">
+
+            <div class="column">
+              <div id="my_profile_picture">
+                <div id="photo"></div>
+              </div>
+              <div id="my_profile_name"> 家长姓名 </div>
+              <div id="my_profile_share"> </div>
+            </div>
+            <div class="column details">
+              <div id="my_profile_details">
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">联系电话</div>
+                  <div class="mpd_content">+46 1234 56789012</div>
+
+                </div>
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">地址</div>
+                  <div class="mpd_content">广州市荔湾区逢源路128号金升大厦</div>
+                </div>
+                <hr>
+                <div class="mpd_contents">
+
+
+                  <div class="mpd_content_title">宝宝姓名</div>
+                  <div class="mpd_content">宝宝姓名</div>
+                </div>
+                <div class="mpd_contents">
+                  <div class="mpd_content_title"> 年龄 </div>
+                  <div class="mpd_content">两岁三个月</div>
+                </div>
+                <div class="mpd_contents">
+                  <div class="mpd_content_title">教师</div>
+                  <div class="mpd_content">王老师</div>
+                </div>
+                <div class="mpd_contents right_aligned">
+                  <div id="edit_profile" class="butn">编辑档案</div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!--Content for Feedback-->
+          <div id="feedback_content">
+            <div id=feedback-wrap>
+              <div id = progress>
+                <div id = bar-container class = progress-bar>
+                  <div id = percentage class = progress-bar><span class = percentage>10%</span></div>
+                </div>
+              </div>
+
+              <div class = inquiry>
+                <div class = ask>1.孩子对幼儿园的总体感受.</div>
+              </div>
+              <div class = arrow id = arrow-left></div>
+              <div class = arrow id = arrow-right></div>
+              <div class = response>
+
+                <div class = face-wrap>
+
+                  <img id = strongDisagree class = "face butn" src = "dummyPictures/face/strongDisagree.png">
+                  <img id = disagree class = "face butn" src="dummyPictures/face/disagree.png">
+                  <img id = neutral class = "face butn" src="dummyPictures/face/neutral.png">
+                  <img id = agree class = "face butn" src="dummyPictures/face/agree.png">
+                  <img id = strongAgree class = "face butn" src = "dummyPictures/face/strongAgree.png">
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Content for Courses -->
+          <div id="courses_content">
+            <h2>课程进展</h2>
+            <div id = courses_wrapper>
+            <div id = courses_container>
+            <div id = cooking class = course>
+              <img class = "course_icon" src="dummyPictures/cooking.png"/>
+              <span class = course_name>烹饪课</span>
+              <div class = course_progress>
+                <div class = course_progress_bar></div>
+                <span class = course_h_remaining></span>
+              </div>
+            </div>
+            <div id = ballet class = course>
+              <img class = "course_icon" src="dummyPictures/ballet.png"/>
+              <span class = course_name>芭蕾课</span>
+              <div class = course_progress>
+                <div class = course_progress_bar></div>
+                <span class = course_h_remaining></span>
+              </div>
+            </div>
+            <div id = art class = course>
+              <img class = "course_icon" src="dummyPictures/art.png"/>
+              <span class = course_name>美术课</span>
+              <div class = course_progress>
+                <div class = course_progress_bar></div>
+                <span class = course_h_remaining></span>
+              </div>
+
+            </div>
+            </div>
+            <img id = course_image src = "dummyPictures/carouselDummy0.jpg"/>
+            </div>
+
+            <h2>课程预告</h2>
+            <div id = no_upcoming>您还没有注册新的课程. &nbsp;<a id = "see_courses" href = "#"> 浏览新课程</a></div>
+
+          </div>
+
+          <!-- Content for Attendance -->
+          <div id="attendance_content">
+            <div id = calendar-wrap>
+              <div class = month>
+                <ul class = month-name>
+                  <li class= prev>&#10094;</li>
+                  <li class= next>&#10095;</li>
+                  <div id=month-title>八月&nbsp;&nbsp;<span>2020</span></div>
+                </ul>
+              </div>
+
+
+              <ul class="weekdays">
+                <li>周一</li>
+                <li>周二</li>
+                <li>周三</li>
+                <li>周四</li>
+                <li>周五</li>
+              </ul>
+
+              <ul class="days">
+                <!-- <li class="prev-date">27</li>
+                <li class="prev-date">28</li>
+                <li class="prev-date">29</li>
+                <li class="prev-date">30</li>
+                <li class="prev-date">31</li> -->
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+
+                <li>10</li>
+                <li>11</li>
+                <li class= today><span>12</span></li>
+                <li><span>13</span></li>
+                <li><span>14</span></li>
+
+                <li><span>17</span></li>
+                <li><span>18</span></li>
+                <li>19</li>
+                <li><span>20</span></li>
+                <li><span>21</span></li>
+
+                <li><span>24</span></li>
+                <li><span>25</span></li>
+                <li><span>26</span></li>
+                <li><span>27</span></li>
+                <li><span>28</span></li>
+
+                <li><span>31</span></li>
+                <li class="next-date">1</li>
+                <li class="next-date">2</li>
+                <li class="next-date">3</li>
+                <li class="next-date">4</li>
+              </ul>
+            </div>
+
+            <div class=modal-wrap>
+              <div class= modal-form>
+                <div class=leave-form>
+                  <span class= close>&times;</span>
+                  <div class=leave-date><span><b>&nbsp;&nbsp;&nbsp;申请请假</b></span></div>
+                  <div class=modal-box class=from><span>&nbsp;&nbsp;&nbsp;从</span>
+                    <input type=time id=from-time  />
+                  </div>
+                  <div class=modal-box class=to><span>&nbsp;&nbsp;&nbsp;至</span>
+                    <input type=time id=to-time  />
+                  </div>
+                  <div class=leave-reason>
+                    <div class=reason style="display: inline-block"><span>&nbsp;&nbsp;&nbsp;缘由</span></div>
+                    <input type=text id=leave-reason style="width:160px"/>
+                    <div id=submit><button >提交申请</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=confirm-wrap>
+              <div class=leave-form>
+                <div class= confirm-form>
+                  <span class= close>&times;</span>
+                  <div class=leave-date><span><b>&nbsp;&nbsp;&nbsp;取消请假</b></span></div>
+                  <div class=confirm-box class=from><span>&nbsp;&nbsp;&nbsp;从  </span>
+                    <div class=confirm-from-time></div>
+                  </div>
+                  <div class=confirm-box class=to><span>&nbsp;&nbsp;&nbsp;至  </span>
+                    <div class=confirm-to-time></div>
+                  </div>
+                  <div id="cancel"><button>取消申请</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Content for Payments-->
+          <div id="payments_content">
+
+            <h2>待支付</h2>
+            <table>
+              <tr>
+                <th>日期</th>
+                <th>时间</th>
+                <th>明细</th>
+                <th>数额</th>
+                <th>缴费</th>
+              </tr>
+              <tr>
+                <td>2/7/2020</td>
+                <td>18:46</td>
+                <td>课程登记 (2020 秋季)</td>
+                <td>CNY 15,000</td>
+                <td><button class = "btn butn">支付</button></td>
+              </tr>
+              <tr>
+                <td>21/7/2020</td>
+                <td>11:16</td>
+                <td>秋季班级郊游</td>
+                <td>CNY 1,000</td>
+                <td><button class = "btn butn">支付</button></td>
+              </tr>
+              <tr>
+                <td>01/8/2020</td>
+                <td>09:16</td>
+                <td>伙食费 (2020 秋季)</td>
+                <td>CNY 3,000</td>
+                <td><button class = "btn butn">支付</button></td>
+              </tr>
+              <tr>
+                <td>04/8/2020</td>
+                <td>18:35</td>
+                <td>周末亲子活动</td>
+                <td>CNY 500</td>
+                <td><button class = "btn butn">支付</button></td>
+              </tr>
+              <tr>
+                <td>12/8/2020</td>
+                <td>14:18</td>
+                <td>户外活动</td>
+                <td>CNY 1,200</td>
+                <td><button class = "btn butn">支付</button></td>
+              </tr>
+            </table>
+            <br>
+            <!--animated downarrow-->
+            <div class="container">
+              <div class="scrollArrow"></div>
+            </div>
+
+            <h2>支付记录</h2>
+            <table>
+              <tr>
+                <th>日期</th>
+                <th>时间</th>
+                <th>明细</th>
+                <th>数额</th>
+                <th>合同 (PDF)</th>
+              </tr>
+              <tr>
+                <td>2/7/2020</td>
+                <td>15:12</td>
+                <td>课程登记 (2020 秋季)</td>
+                <td>CNY 15,000</td>
+                <td><button class = "btn butn">下载</button></td>
+              </tr>
+              <tr>
+                <td>21/7/2020</td>
+                <td>05:18</td>
+                <td>秋季郊游</td>
+                <td>CNY 1,000</td>
+                <td><button class = "btn butn">下载</button></td>
+              </tr>
+              <tr>
+                <td>01/8/2020</td>
+                <td>10:11</td>
+                <td>伙食费</td>
+                <td>CNY 3,000</td>
+                <td><button class = "btn butn">下载</button></td>
+              </tr>
+              <tr>
+                <td>04/8/2020</td>
+                <td>12:12</td>
+                <td>周末烹饪活动</td>
+                <td>CNY 500</td>
+                <td><button class = "btn butn">下载</button></td>
+              </tr>
+              <tr>
+                <td>12/8/2020</td>
+                <td>08:41</td>
+                <td>户外活动</td>
+                <td>CNY 1,200</td>
+                <td><button class = "btn butn">下载</button></td>
+              </tr>
+            </table>
+
+
+          </div>
+
+          <!--cute baby section-->
+          <div id = "cute_baby_content">
+            <!--Ability test content-->
+            <!--nav buttons and navbar-->
+            <div id = navigationButtons>
+              <button class="navbtnDaily">日常数据
+              </button>
+              <button class="navbtnAbility">能力测试
+              </button>
+              <button class="navbtnPhsysical">身体发育
+              </button>
+            </div>
+          <div class="dailyData">
+            <br><br><br><br><br><br><br><br>日常数据文图
+          </div>
+          <div class="physicalDev">
+            <br><br><br><br><br><br><br><br>身体发育文图
+          </div>
+          <div class="abilities">
+            <br>
+            <a id=arrow-L class="navback"></a>
+            <div class="abilitynav">体育能力</div>
+            <a id=arrow-R class="navforward"></a>
+            <!--Ability test physical-->
+            <div class="abilityPhysical">
+              <table>
+                <tr>
+                  <td>踮脚走路10米
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>倒走10米</td>
+                </tr>
+                <tr>
+                  <td>逆时针旋转3圈
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>踢球5米</td>
+                </tr>
+                <tr>
+                  <td>连续翻身5次</td>
+                </tr>
+              </table>
+            </div>
+
+            <!--ability test social-->
+            <div class="abilitySocial">
+              <table>
+                <tr>
+                  <td>模仿其他小朋友的表情与肢体动作
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>与其他小朋友一起玩游戏</td>
+                </tr>
+                <tr>
+                  <td>遵守教室内和操场上的规则</td>
+                </tr>
+                <tr>
+                  <td>跟其他小朋友展示新学会的儿歌与舞蹈
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>发脾气的时候能说清楚为什么发脾气</td>
+                </tr>
+              </table>
+            </div>
+
+            <!--Ability test Cognitive-->
+            <div class="abilityCognitive">
+              <table>
+                <tr>
+                  <td>能找到藏起来的东西
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>能集中精力做一件事情</td>
+                </tr>
+                <tr>
+                  <td>能识别5种颜色与形状
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>能自己穿衣服</td>
+                </tr>
+                <tr>
+                  <td>能认出幼儿园里的老师和同学
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--Ability test Language-->
+            <div class="abilityLanguage">
+              <table>
+                <tr>
+                  <td>能背英文字母</td>
+                </tr>
+                <tr>
+                  <td>能完整的诉说一件事情
+                    <span class="checkmark">
+                      <div class="checkmark_stem"></div>
+                      <div class="checkmark_kick"></div>
+                  </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>能说简单的笑话</td>
+                </tr>
+                <tr>
+                  <td>会运用反义词</td>
+                </tr>
+                <tr>
+                  <td>会运用形容词</td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <form>
+              <textarea>注释</textarea>
+            </form>
+            <br>
+            </div>
+          </div>
+
+          <!--Notifications section-->
+          <div id="notifications_content">
+            <div class="notification_row">
+              <div class="notification_type">缴费</div>
+              <div class="notification_title">健身课</div>
+              <div class="notification_date">18/08/2020</div>
+            </div>
+            <div class="notification_decsription">以运动为主的多维度综合课程 课程分为新生儿期、幼儿期及少儿期三种课程表现形式，采用国际标准体操器材，共涉及48种训练主题，160余种技巧动作，通过阶梯性训练目标，全面提升孩子的体能、社交及认知发展，增进亲子关系。.</div>
+            <div class="notification_row">
+              <div class="notification_type">缴费</div>
+              <div class="notification_title">音乐课</div>
+              <div class="notification_date">17/08/2020</div>
+            </div>
+            <div class="notification_decsription">小型迷你环球音乐会 通过小型现场演奏会的形式，带孩子体验6大洲40余个国家不同类型的音乐，丰富的音乐体验让孩子直观地感受韵律、节奏、节拍，从而发展孩子的音乐才能，是给孩子带来高品质体验的适龄专业课程。</div>
+            <div class="notification_row">
+              <div class="notification_type">缴费</div>
+              <div class="notification_title">美术课</div>
+              <div class="notification_date">16/08/2020</div>
+            </div>
+            <div class="notification_decsription">为孩子打开视觉艺术之门 根据《美国国家视觉艺术教育标准》，通过提供丰富、有创新性的艺术材料，让孩子体验完整而多样的艺术形式，如雕塑、绘画、拓印、拼贴、版画等。同时，还将在过程中让孩子学习世界艺术名作，了解世界艺术大师和世界艺术文化，培养孩子的艺术兴趣和艺术情操，锻炼想象力和创造力，培养小小世界公民。</div>
+          </div>
+
+          <!--Contact section-->
+          <div id="mycontact_content">
+            <div class="mycontact_column mycontact_labels">
+              <div class="contact_icon"><div id="contact_phone"></div><div class="mycontact_title"> Call us </div></div>
+              <div class="contact_icon"><div id="contact_email"></div> <div class="mycontact_title">E-mail us</div></div>
+              <div class="contact_icon"><div  id="contact_location"></div> <div class="mycontact_title">Visit us</div></div>
+            </div>
+
+            <div class="mycontact_column mycontact_info">
+              <div class="info_divs">+46 1234 78594422</div>
+              <div class="info_divs">skg@qq.com</div>
+              <div class="info_divs">15 Yemen Road, Yemen</div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="content_view_close"></div>
+      </section>
+
+      <section id = "right">
+        <div id = "cute_baby" class = "flip-text my_home_section right_section">
+          <div class="inner">
+            <div class = " front">
+              萌宝档案
+            </div>
+            <div class="back">
+              MY CUTE BABY
+            </div>
+          </div>
+        </div>
+
+        <div id = "courses" class = "flip-text my_home_section right_section">
+          <div class="inner">
+            <div class = " front">
+              我的报课
+            </div>
+            <div class="back">
+              MY COURSES
+            </div>
+          </div>
+        </div>
+
+        <div id = "attendance" class = "flip-text my_home_section right_section">
+          <div class="inner">
+            <div class = " front">
+              我的考勤
+            </div>
+            <div class="back">
+              MY ATTENDANCE
+            </div>
+          </div>
+        </div>
+
+        <div id = "notifications" class = "my_home_section right_section">
+          <div id="notification_display_title">通告</div>
+            <div id="notification_homepage_display">
+
+              <div class="notification_row">
+                <div class="notification_type">缴费</div>
+                <div class="notification_title">健身课</div>
+                <div class="notification_date">18/08/2020</div>
+              </div>
+              <div class="notification_row">
+                <div class="notification_type">缴费</div>
+                <div class="notification_title">音乐课</div>
+                <div class="notification_date">17/08/2020</div>
+              </div>
+              <div class="notification_row">
+                <div class="notification_type">缴费</div>
+                <div class="notification_title">美术课</div>
+                <div class="notification_date">16/08/2020</div>
+              </div>
+            </div>
+        </div>
+
+        <div id = "mycontact" class = "flip-text my_home_section right_section">
+          <div class="inner">
+            <div  class = " front">
+              联系我们
+            </div>
+            <div class="back">
+              CONTACT US
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </myhome>
+  </div>
+  </body>
+</html>

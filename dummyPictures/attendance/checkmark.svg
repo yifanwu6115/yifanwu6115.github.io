@@ -1,0 +1,20 @@
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="1" x="1" height="600" width="800"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
+  <g id="svg_6">
+   <g id="svg_4" fill="#000000" transform="translate(0, 200) scale(0.1, -0.1)">
+    <path fill="#ffc700" id="svg_5" d="m2156.35547,1713.92578c-96,-50 -447,-389 -631,-610c-159,-191 -334,-425 -477,-638l-127,-188l-103,173c-56,95 -140,237 -186,315c-47,79 -94,150 -106,158c-80,56 -233,-54 -245,-177c-4,-46 1,-58 244,-494c246,-441 250,-447 293,-466c34,-16 55,-19 97,-13c54,6 200,70 220,96c6,8 35,68 64,134c74,170 243,507 332,660c194,336 394,608 655,891c68,74 93,108 93,127c0,45 -66,62 -123,32z"/>
+   </g>
+  </g>
+ </g>
+</svg>
